@@ -7,16 +7,14 @@ Pod::Spec.new do |s|
   s.version        = package['version']
   s.summary        = package['description']
   s.description    = package['description']
+  s.homepage       = package['homepage']
   s.license        = package['license']
   s.author         = package['author']
-  s.homepage       = package['homepage']
+  s.platforms       = {:ios, '9.0'}
   s.source         = { :git => 'https://github.com/fusetools/react-native-http-bridge.git' }
 
+  s.source_files   = 'ios/**/*.{h,m,swift}', 'ios/WGCDWebServer/*/*.{h,m}'
   s.requires_arc   = true
-  s.platform       = :ios, '7.0'
-
-  # s.preserve_paths = 'README.md', 'package.json', 'httpServer.js'
-  s.source_files   = 'ios/*.{h,m}', 'ios/WGCDWebServer/*/*.{h,m}'
 
   s.dependency 'React'
 end

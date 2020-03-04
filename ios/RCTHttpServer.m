@@ -9,12 +9,6 @@
 #import "WGCDWebServerPrivate.h"
 #include <stdlib.h>
 
-@interface RCTHttpServer : NSObject <RCTBridgeModule> {
-    WGCDWebServer* _webServer;
-    NSMutableDictionary* _completionBlocks;
-}
-@end
-
 static RCTBridge *bridge;
 
 @implementation RCTHttpServer
