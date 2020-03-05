@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage       = package['homepage']
   s.license        = package['license']
   s.author         = package['author']
-  s.platforms       = {:ios, '9.0'}
+  s.platforms       = {:ios => '9.0'}
   s.source         = { :git => 'https://github.com/fusetools/react-native-http-bridge.git' }
 
   s.source_files   = 'ios/**/*.{h,m,swift}', 'ios/WGCDWebServer/*/*.{h,m}'
