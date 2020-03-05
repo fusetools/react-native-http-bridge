@@ -99,5 +99,6 @@ RCT_EXPORT_METHOD(respond: (NSString *) requestId
     }
 
     if (completionBlock) completionBlock(requestResponse);
+}
 
 @end

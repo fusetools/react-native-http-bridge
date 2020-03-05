@@ -1,7 +1,7 @@
 #import <React/RCTBridgeModule.h>
 #import "WGCDWebServer.h"
 
-@interface HttpBridge : NSObject <RCTBridgeModule> {
+@interface RCTHttpServer : NSObject <RCTBridgeModule> {
     WGCDWebServer* _webServer;
     NSMutableDictionary* _completionBlocks;
 }
